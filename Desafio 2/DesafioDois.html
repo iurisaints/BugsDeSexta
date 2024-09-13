@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha seu personagem Star Wars</title>
+</head>
+<body>
+
+    <h1>Escolha seu personagem favorito de Star Wars</h1>
+    
+    <button onclick="mostrarPersonagem('Luke')">Luke Skywalker</button>
+    <button onclick="mostrarPersonagem('Vader')">Darth Vader</button>
+    <button onclick="mostrarPersonagem('Leia')">Leia Organa</button>
+
+    <div>
+        <img id="imagem-personagem" src="" alt="Personagem de Star Wars" width="300">
+    </div>
+
+    <script>
+        function mostrarPersonagem(personagem) {
+            var imagem = document.getElementById("imagem-personagem");
+            
+            if (personagem == "Luke") {
+                imagem.src = "luke.png";
+            } else if (personagem == "Vader") {
+                imagem.src = "vader.png";
+            } else if (personagem == "Leia") {
+                imagem.src = "leia.png";
+            }
+        }
+    </script>
+
+</body>
+</html>
