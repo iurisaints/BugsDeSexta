@@ -13,3 +13,6 @@ A tabela `carros` deve ter as seguintes colunas:
 - `cor`: A cor do carro.
 - `preco`: O preço do carro (somente valores positivos permitidos).
 
+### Como corrigir:
+
+Os valores não podem ser nulos, valores numéricos não podem ser VARCHAR, valores em texto não podem ser INT, e os valores não podem ser negativos.
